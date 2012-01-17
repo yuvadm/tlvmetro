@@ -133,7 +133,7 @@ THE SOFTWARE.
                 if (color === undefined) color = "#000000";
 
                 var lineTextClass = $(ul).attr("data-textClass");
-                if (lineTextClass === undefined) lineTextClass = "";                
+                if (lineTextClass === undefined) lineTextClass = "";              
 
                 var shiftCoords = $(ul).attr("data-shiftCoords");
                 if (shiftCoords === undefined) shiftCoords = "";
@@ -362,7 +362,7 @@ THE SOFTWARE.
         ctx.closePath();
         ctx.stroke();
         ctx.fill();
-        
+      
         // Render text labels and hyperlinks
         var pos = "";
         var offset = width + 4;
@@ -406,7 +406,7 @@ THE SOFTWARE.
             $("<a " + style + " title='" + data.title.replace(/\\n/g,"<br />") + "' href='" + data.link + "' target='_new'>" + data.label.replace(/\\n/g,"<br />") + "</span>").appendTo(el);
         else
             $("<span " + style + ">" + data.label.replace(/\\n/g,"<br />") + "</span>").appendTo(el);;
-        
+      
     },
     _drawGrid: function (el, scale, gridNumbers) {
 
